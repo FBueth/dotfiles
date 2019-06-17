@@ -30,8 +30,6 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
-brew install heroku/brew/heroku
-
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -44,38 +42,19 @@ brew install grep
 brew install openssh
 
 # Install other useful binaries.
-brew install ack
 brew install git
 brew install jq
 brew install tree
 brew install zopfli
 brew install gradle
-brew install gdub
 brew install maven
 brew install ant
 brew install unrar
 brew install p7zip
-brew install kubectl
-brew install kops
-brew install terraform
-brew install cfssl
-brew install tmux
-brew install awscli
-brew install stern
 brew install htop
 brew install ngrep
-brew install hostess
-brew install hadolint
 brew install telnet
-brew install rbenv
-brew install ruby-build
-brew install hugo
-brew install fswatch
-brew install bat
-brew install exa
-
-brew tap wagoodman/dive
-brew install dive
+brew install gdub
 
 # Remove outdated versions from the cellar.
 brew cleanup
